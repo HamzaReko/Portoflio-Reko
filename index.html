@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>REKO</title>
     <link rel="shortcut icon" href="./Images/icon.jpg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
+    <script>
+$(document).ready(function() {
+  $("#card1").click(function() {
+    var phoneText = $(".phone").text(); // Get phone number
+    navigator.clipboard.writeText(phoneText); // Copy phone number to clipboard
+    $(".phone").text("Copied!"); // Replace phone number with "Copied!"
+    setTimeout(function() {
+      $(".phone").text(phoneText); // Restore original phone number after 1 second
+    }, 500);
+  });
+});
+    </script>
+    <script>
+$(document).ready(function() {
+  $("#card2").click(function() {
+    var phoneText = $("#email").text(); // Get phone number
+    navigator.clipboard.writeText(phoneText); // Copy phone number to clipboard
+    $("#email").text("Copied!"); // Replace phone number with "Copied!"
+    setTimeout(function() {
+      $("#email").text(phoneText); // Restore original phone number after 1 second
+    }, 500);
+  });
+});
+
+    </script>
 
 </head>
 
@@ -22,9 +48,9 @@
     </header>
     <section class="main">
         <div>
-            <h2>Hello I'm Hamza <br><span class="me">Front-End Web Developer & Graphic Desginer</span>
+            <h2>Hello I'm Hamza <br><span class="me">Front-End Web Developer & Graphic Desginer.</span>
             </h2>
-            <h3>Where Innovation Meets Design
+            <h3>Where Innovation Meets Design.
             </h3>
             <a href="#projects" class="main-btn">View My Work</a>
             <div class="social-icons">
@@ -44,32 +70,26 @@
                 </div>
                 <div class="info">
                     <h3>Web Development</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt aliquam repellendus,
-                        blanditiis veritatis quo at hic a nisi cupiditate fuga deleniti deserunt dolores sit numquam
-                        rem, tempore necessitatibus. Facere, earum.</p>
+                    <p>Crafting websites with modern tools for seamless user experiences. Let's bring your ideas to life!</p>
 
                 </div>
             </div>
             <div class="card">
                 <div class="icon">
-                    <i class="fa-solid fa-address-card"></i>
+                    <i class="fa-solid fa-desktop"></i>
                 </div>
                 <div class="info">
-                    <h3>Business Cards Desgininng</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt aliquam repellendus,
-                        blanditiis veritatis quo at hic a nisi cupiditate fuga deleniti deserunt dolores sit numquam
-                        rem, tempore necessitatibus. Facere, earum.</p>
+                    <h3>Responsive Desgin</h3>
+                    <p>Ensuring your site adapts perfectly to every device. User-friendly experience across the board.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="icon">
-                    <i class="fa-solid fa-address-card"></i>
+                    <i class="fa-solid fa-palette"></i> 
                 </div>
                 <div class="info">
-                    <h3>Business Cards Desgininng</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt aliquam repellendus,
-                        blanditiis veritatis quo at hic a nisi cupiditate fuga deleniti deserunt dolores sit numquam
-                        rem, tempore necessitatibus. Facere, earum.</p>
+                    <h3>Graphic Desgininng</h3>
+                    <p>Creating compelling visuals that convey your brand's message. Elevate your brand with stunning designs.</p>
                 </div>
             </div>
         </div>
@@ -92,11 +112,24 @@
             </div>
             <div class="project-card">
                 <div class="project-image">
-                    <img src="./Images/1.jpg" alt="">
+                    <img src="./Book Hub.png" alt="">
                     <div class="project-info">
-                        <p class="project-category">Devoloping And making Websites</p>
+                        <p class="project-category">Shopping Website For Books</p>
                         <strong class="project-title">
-                            <span>Log in Websites</span>
+                            <span>Online Store</span>
+                            <a href="./Book-Hub-master/index.html" target="_blank" class="more-details">More Details</a>
+                        </strong>
+                    </div>
+
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./Images/b7e1e580-c611-11ea-9b24-523c65baea0e.png" alt="">
+                    <div class="project-info">
+                        <p class="project-category">Coming Soon</p>
+                        <strong class="project-title">
+                            <span>Coming Soon</span>
                             <a href="" class="more-details">More Details</a>
                         </strong>
                     </div>
@@ -105,11 +138,11 @@
             </div>
             <div class="project-card">
                 <div class="project-image">
-                    <img src="./Images/1.jpg" alt="">
+                    <img src="./Images/b7e1e580-c611-11ea-9b24-523c65baea0e.png" alt="">
                     <div class="project-info">
-                        <p class="project-category">Devoloping And making Websites</p>
+                        <p class="project-category">Coming Soon</p>
                         <strong class="project-title">
-                            <span>Log in Websites</span>
+                            <span>Coming Soon</span>
                             <a href="" class="more-details">More Details</a>
                         </strong>
                     </div>
@@ -118,11 +151,11 @@
             </div>
             <div class="project-card">
                 <div class="project-image">
-                    <img src="./Images/1.jpg" alt="">
+                    <img src="./Images/b7e1e580-c611-11ea-9b24-523c65baea0e.png" alt="">
                     <div class="project-info">
-                        <p class="project-category">Devoloping And making Websites</p>
+                        <p class="project-category">Coming Soon</p>
                         <strong class="project-title">
-                            <span>Log in Websites</span>
+                            <span>Coming Soon</span>
                             <a href="" class="more-details">More Details</a>
                         </strong>
                     </div>
@@ -131,24 +164,11 @@
             </div>
             <div class="project-card">
                 <div class="project-image">
-                    <img src="./Images/1.jpg" alt="">
+                    <img src="./Images/b7e1e580-c611-11ea-9b24-523c65baea0e.png" alt="">
                     <div class="project-info">
-                        <p class="project-category">Devoloping And making Websites</p>
+                        <p class="project-category">Coming Soon</p>
                         <strong class="project-title">
-                            <span>Log in Websites</span>
-                            <a href="" class="more-details">More Details</a>
-                        </strong>
-                    </div>
-
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./Images/1.jpg" alt="">
-                    <div class="project-info">
-                        <p class="project-category">Devoloping And making Websites</p>
-                        <strong class="project-title">
-                            <span>Log in Websites</span>
+                            <span>Coming Soon</span>
                             <a href="" class="more-details">More Details</a>
                         </strong>
                     </div>
@@ -163,23 +183,25 @@
             Let's Work Together
         </h2>
         <div class="content">
-            <div class="card">
+            <div class="card" id="card1">
                 <div class="icon">
                     <i class="fa-solid fa-phone"></i>
                 </div>
-                <div class="info" id="email">
-                    <h3>Phone</h3>
-                    <p>+201090096725</p>
+                <div class="info" >
+            <div class="email">
+                        <h3>Phone</h3>
+                        <p class="phone">+201090096725</p>
+            </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="card2">
                 <div class="icon">
                     <i class="fa-solid fa-envelope"></i>
 
                 </div>
-                <div class="info" id="email">
+                <div class="info" id="des">
                     <h3>Email</h3>
-                    <p>hamzabusiness@gmail.com</p>
+                    <p id="email">hamzareko.business@gmail.com</p>
                 </div>
 
             </div>
@@ -188,14 +210,15 @@
 
     </section>
     <footer class="footer">
-        <p class="footer-title">Copyrights @ <span>Hamza Ismail</span></p>
+        <p class="footer-title">Copyrights @ <span><a href="#">Reko</a></span></p>
         <div class="social-icons">
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-upwork"></i></a>
-            <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/hamza-ismail-14333a301/"><i class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://www.upwork.com/freelancers/~01ba716e1c57489a21"><i class="fa-brands fa-upwork"></i></a>
+            <a target="_blank" href="https://wa.me/201090096725"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <a target="_blank" href="/not.html"><i class="fa-brands fa-square-facebook"></i></a>
         </div>
     </footer>
+    
 
 
 
